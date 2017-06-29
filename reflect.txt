@@ -1,0 +1,11 @@
+1. Explain why the copy assignment operator checks for self-assignment before doing anything else.
+	
+	A: It avoid to copy the same thing that already exist in the member address.
+	2. Explain why a class that uses dynamic memory to hold its resources needs custom definitions of its copy constructor and its copy assignment operator.
+
+    A: This is because in this program, we copy each new phone number to the m_phonenumber member of the class. If it is not used copy constructor and copy assignment operator, the new phone number will always replace the previous. So we should copy the values to a place where they are temporarily stored.
+3. How did you avoid duplication of code?
+
+    A: If similar code is needed is more than place, put the code in a function. Also, utilize templates to avoid code duplication.
+
+4. List what you have learned in completing this workshop.    A: In this workshop, I continue know what is assignment operator does. Assignment operator is called when an already initialized object is assigned a new value from another existing object. 
